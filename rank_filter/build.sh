@@ -2,8 +2,8 @@
 CWD=$(cd `dirname $0` && pwd)
 source $CWD/../common-vars.sh
 
-RANK_FILTER_CXX_FLAGS="${CXXFLAGS}"
-RANK_FILTER_LDFLAGS="${CXX_LDFLAGS}"
+RANK_FILTER_CXX_FLAGS="-stdlib=libc++ ${CXXFLAGS}"
+RANK_FILTER_LDFLAGS="-stdlib=libc++ ${CXX_LDFLAGS}"
 #RANK_FILTER_LDFLAGS="${CXX_LDFLAGS} -Wl,-rpath,${PREFIX}/lib -L${PREFIX}/lib"
 
 
