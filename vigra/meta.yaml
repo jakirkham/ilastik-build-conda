@@ -21,7 +21,7 @@ source:
   # or from git:
   # git_url can also be a relative path to the recipe directory
   git_url: git://github.com/stuarteberg/vigra.git
-  git_tag: HEAD # must include commit e4946fe0387bf9086ef074da6912c763f832c053
+  git_tag: e4946fe0387bf9086ef074da6912c763f832c053 # must include commit e4946fe0387bf9086ef074da6912c763f832c053
 
   ## or from hg:
   #hg_url: ssh://hg@bitbucket.org/ilanschnell/bsdiff4
