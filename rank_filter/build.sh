@@ -14,7 +14,6 @@ cd build
 BLD=$(pwd)
 
 cmake ${SRC}\
-        -DCMAKE_INSTALL_PREFIX="${PREFIX}" \
         -DCMAKE_PREFIX_PATH="${PREFIX}" \
 \
         -DCMAKE_SHARED_LINKER_FLAGS="${RANK_FILTER_LDFLAGS}" \
