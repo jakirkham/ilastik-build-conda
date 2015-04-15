@@ -18,7 +18,7 @@ build:
 
   # Whether binary files should be made relocatable using install_name_tool
   # on OS X or patchelf on Linux.
-  binary_relocation: false # (defaults to true)
+  #binary_relocation: false # (defaults to true)
 
   # Binary files may contain the build prefix and need it replaced with the
   # install prefix at installation time.  Conda can automatically identify
