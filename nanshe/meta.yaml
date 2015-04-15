@@ -1,0 +1,97 @@
+package:
+  name: nanshe
+  version: 0.1a0 
+
+source:
+  git_url: https://github.com/jakirkham/nanshe
+  git_tag: HEAD
+
+build:
+  # If this is a new build for the same version, increment the build
+  # number. If you do not include this key, it defaults to 0.
+  # number: 1
+
+  # A list of globs for files that should not be linked (soft or
+  # hard). They will always be copied.
+  no_link:
+    - bin/*
+
+  # Whether binary files should be made relocatable using install_name_tool
+  # on OS X or patchelf on Linux.
+  binary_relocation: false # (defaults to true)
+
+  # Binary files may contain the build prefix and need it replaced with the
+  # install prefix at installation time.  Conda can automatically identify
+  # and register such files:
+  detect_binary_files_with_prefix: true # (defaults to false)
+
+requirements:
+  # Packages required to build the package. python and numpy must be
+  # listed explicitly if they are required.
+  build:
+    - fftw
+    - python
+    - setuptools
+    - sphinx
+    - nose
+    - psutil
+    - numpy
+    - scipy
+    - h5py
+    - bottleneck
+    - pyfftw
+    - scikit-image
+    - vigra
+    - spams
+    - pyqt
+
+  # Packages required to run the package. These are the dependencies that
+  # will be installed automatically whenever the package is installed.
+  # Package names should be any valid conda spec (see "Specifying versions
+  # in requirements" below).
+  run:
+    - fftw
+    - python
+    - setuptools
+    - sphinx
+    - nose
+    - psutil
+    - numpy
+    - scipy
+    - h5py
+    - bottleneck
+    - pyfftw
+    - scikit-image
+    - vigra
+    - spams
+    - pyqt
+
+test:
+  # Python imports
+  #imports:
+  #  - nanshe
+
+  #commands:
+    # You can put test commands to be run here.  Use this to test that the
+    # entry points work.
+
+    #- nanshe-converter --help
+    #- nanshe-learner --help
+    #- nanshe-register --help
+    #- nanshe-viewer --help
+
+  # You can also put a file called run_test.py in the recipe that will be run
+  # at test time.
+
+  requires:
+    # Put any additional test requirements here.  For example
+    - nose
+
+about:
+  home: http://github.com/jakirkham/nanshe
+  license: GPLv3
+  summary: 'An image processing toolkit'
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml
