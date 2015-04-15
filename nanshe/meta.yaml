@@ -43,6 +43,7 @@ requirements:
     - scikit-image
     - vigra
     - spams
+    - rank_filter
     - pyqt
 
   # Packages required to run the package. These are the dependencies that
@@ -64,6 +65,7 @@ requirements:
     - scikit-image
     - vigra
     - spams
+    - rank_filter
     - pyqt
 
 test:
